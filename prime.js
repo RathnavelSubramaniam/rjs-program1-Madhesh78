@@ -1,11 +1,11 @@
-Const number=17;
-let is prime=true;
-    if (num <= 1) {
+const number=17;
+let isPrime=true;
+    if (number <= 1) {
         isPrime= false;
     }else{
 
     for (let i = 2; i <=Math.sqrt(number); i++) {
-        if (num % i === 0) {
+        if (number % i === 0) {
             isPrime=false;
             break;
         }
