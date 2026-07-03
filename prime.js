@@ -1,21 +1,22 @@
-Const isPrime =(num) => {
-    if (num <= 1) {
-        return false;
-    }
+// JavaScript program to check if a number is Prime
+// Using let and const variables
 
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            return false;
+const number = 29;
+let isPrime = true;
+
+if (number <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            isPrime = false;
+            break;
         }
     }
-
-    return true;
 }
 
-let number = 17;
-
-if (isPrime(number)) {
+if (isPrime) {
     console.log(number + " is a Prime Number");
 } else {
-    console.log(number + " is not a Prime Number");
+    console.log(number + " is Not a Prime Number");
 }
