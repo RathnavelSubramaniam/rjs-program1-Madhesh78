@@ -1,18 +1,19 @@
-const number=17;
-let isPrime=true;
-    if (number <= 1) {
-        isPrime= false;
-    }else{
+const number = 17;
+let isPrime = true;
 
-    for (let i = 2; i <=Math.sqrt(number); i++) {
+if (number <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i < number; i++) {
         if (number % i === 0) {
-            isPrime=false;
+            isPrime = false;
             break;
         }
     }
 }
-if(isPrime){
-    console.log(number + " is a Prime Number");
+
+if (isPrime) {
+    console.log(number + " is a Prime Number.");
 } else {
-    console.log(number + " is not a Prime Number");
+    console.log(number + " is Not a Prime Number.");
 }
