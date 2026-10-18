@@ -13,7 +13,7 @@ if (number <= 1) {
             break;
         }
     }
-};
+}
 
 if (isPrime) {
     console.log(number + " is a Prime Number");
